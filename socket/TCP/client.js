@@ -1,13 +1,11 @@
 import net from 'node:net';
 
-const client = new net.Socket();// Crea un nuevo socket TCP para conectarse al servidor.
-
 const port = 3000;
-const host = 'localhost'; // Change to the host where the server is
 
-client.connect(port, host, () => {
-    console.log('Conexion al servidor TCP');// Mensaje que indica que el cliente se ha conectado al servidor.
-    client.write('Hola desde el cliente');// Envía un mensaje al servidor una vez que la conexión está establecida.
+const client = net.createConnection(port, () => {// Crea un nuevo socket TCP para conectarse al servidor.
+    // 'connect' listener.
+    console.log('Conexion al servidor TCP');
+    client.write('Hola desde el cliente');
 });
 
 // Evento que se activa cuando el cliente recibe datos del servidor.
