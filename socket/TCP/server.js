@@ -8,16 +8,16 @@ const server = net.createServer((socket) => {
     socket.on('data', (data) => {
         console.log('Datos recibido:', data.toString());
 
-        //Enviando datos de vuelta al cleinete
-        socket.write('Hola desde el servidor: ' + data.toString());
+        // Enviar solo el mensaje del servidor, sin concatenar el mensaje recibido
+        socket.write('Hola desde el servidor');
     });
 
-    //Manejar eventos con errores
+    // Manejar eventos con errores
     socket.on('error', (err) => {
         console.error('Error de conexion :', err);
     });
 
-    // Evento cuando la concecion del cliente es cerrada
+    // Evento cuando la conexion del cliente es cerrada
     socket.on('close', () => {
         console.log('Cliente desconectado');
     });

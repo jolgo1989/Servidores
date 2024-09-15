@@ -31,6 +31,7 @@ app.put('/usuarios/:id', (req, res) => {
     const newData = req.body
     const usuariosFound = usuarios.find((usuario) => usuario.id === parseInt(req.params.id))
 
+
     if (!usuariosFound) return res.status(404).json({ message: 'Usuario no encontrado' })
 
 
