@@ -1,0 +1,2 @@
+1) Elabora un informe manuscrito (máximo una página) en el que expliques de forma clara las diferencias entre los protocolos UDP y TCP.
+2) Proporciona un ejemplo en tu código que permita observar las diferencias entre ambos protocolos.

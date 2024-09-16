@@ -1,11 +1,13 @@
-import dgram from 'dgram';
+import dgram from 'node:dgram';
+
 const client = dgram.createSocket('udp4');
 
-client.send('Hello from client', 8081, 'localhost', (err) => {
+client.send('Hola desde el cliente', 8081, 'localhost', (err) => {
     if (err) console.error(err);
-    client.close();
+
 });
 
 client.on('message', (msg, rinfo) => {
-    console.log(`Client got: ${msg} from ${rinfo.address}:${rinfo.port}`);
+    console.log(`Cliente recibe: ${msg} from ${rinfo.address}:${rinfo.port}`);
+    client.close();
 });
