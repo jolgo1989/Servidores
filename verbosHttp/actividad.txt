@@ -1,0 +1,20 @@
+Crear un servidor básico con Express:
+
+Inicia un nuevo proyecto de Node.js y configura Express como se explicó en clase.
+Asegúrate de que tu servidor escuche en el puerto 3000.
+Implementar Rutas con Verbos HTTP:
+
+Implementa los siguientes verbos HTTP:
+GET en la ruta /productos: Deberá devolver un mensaje indicando que estás obteniendo todos los productos.
+POST en la ruta /productos: Deberá devolver un mensaje indicando que se ha creado un nuevo producto.
+PUT en la ruta /productos/:id: Deberá actualizar un producto por ID y devolver un mensaje confirmando la actualización.
+DELETE en la ruta /productos/:id: Deberá eliminar un producto por ID y devolver un mensaje confirmando la eliminación.
+Usar Thunder Client para Probar las Rutas:
+
+Realiza pruebas de todas las rutas implementadas utilizando Thunder Client para verificar que devuelven los mensajes correctos.
+Añadir Manejo de Errores:
+
+Implementa metodo para manejar rutas no encontradas con un mensaje de error personalizado y un código de estado 404.
+Documentar el Código:
+
+Comenta tu código explicando qué hace cada sección, especialmente las rutas y el manejo de errores.
