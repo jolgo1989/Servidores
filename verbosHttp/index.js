@@ -29,7 +29,6 @@ app.delete('/usuarioID/:id', (req, res) => {
 })
 
 
-
 app.post('/request', (req, res) => {
     res.send('Se a creado un request')
     console.log(req.originalUrl) // Muestra en la consola la URL original solicitada.
