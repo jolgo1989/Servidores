@@ -14,7 +14,7 @@ Usar Thunder Client para Probar las Rutas:
 Realiza pruebas de todas las rutas implementadas utilizando Thunder Client para verificar que devuelven los mensajes correctos.
 Añadir Manejo de Errores:
 
-Implementa metodo para manejar rutas no encontradas con un mensaje de error personalizado y un código de estado 404.
+Averiguar que son los codigos de estado e implementar un metodo para manejar rutas no encontradas con un mensaje de error personalizado y un código de estado 404.
 Documentar el Código:
 
 Comenta tu código explicando qué hace cada sección, especialmente las rutas y el manejo de errores.

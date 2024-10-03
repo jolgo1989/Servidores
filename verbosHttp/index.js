@@ -49,7 +49,6 @@ app.get('/imagen', (req, res) => {
 })
 
 
-
 app.listen(port, () => {
     console.log(`Escuchando el puerto ${port}`)
 })
